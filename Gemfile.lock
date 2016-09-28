@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    rails_admin_selectors (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.10)
+  rails_admin_selectors!
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.10.6
