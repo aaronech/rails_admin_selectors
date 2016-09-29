@@ -1,6 +1,6 @@
 class ProductBase < ActiveRecord::Base
   self.table_name = 'products'
-  before_save :add_selector
+  before_create :add_selector
 
   def add_selector
     quan = quantity.split('|')
@@ -20,7 +20,7 @@ class ProductBase < ActiveRecord::Base
         q
       end
     end
-    self.quantity = new_quan.join('|')
+    self.quantity = new_quan.join('|') if self.link_href.include?('6pm.com')
   end
 
 end
